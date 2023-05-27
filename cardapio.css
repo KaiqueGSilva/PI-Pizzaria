@@ -1,0 +1,417 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bebas+Neue&display=swap');
+
+
+body{
+    background: linear-gradient(#121212, #222422, #474747, rgb(221, 221, 221));
+}
+
+#img-teste{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    min-height:90px;
+    min-width: 90px;
+}
+
+.testeeee{
+width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+#logo-pizzaria{
+    width: 90px;
+    border-radius: 50%;
+    position: fixed;
+}
+
+.header,
+.navigation-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    gap: 2em;
+}
+
+.header{
+    background: #00000055;
+    box-shadow: 1px 1px 4px #000000;
+    height: 5em;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: fixed;
+    width: 100%;
+}
+
+.navigation-header a{
+    text-decoration: none;
+    color: rgb(119, 117, 117);
+    transition: 1s;
+    font-weight: bold;
+    
+}
+
+.navigation-header a:hover{
+    color: white;
+    background-color: rgb(134, 132, 132);
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.content{
+    text-align: center;
+    padding-top: 5em;
+    /* height: 100vh; */
+    transition: 1s;
+}
+
+
+.logo{    
+    width: 90px;
+    border-radius: 50%;
+}
+
+
+/* modal */
+
+.links{
+    text-decoration: none;
+}
+
+.modal-dialog{  
+    margin: 0;
+    width: 430px;
+}
+
+.icons-modal{
+    background-color: white;
+    mix-blend-mode: color-burn;
+}
+
+.modal-header p{
+    color: white;
+    font-size: clamp(1.2rem, 4vw, 5rem); ;
+}
+
+
+.modal-content{
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #393d46;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
+}
+
+.modal-header .btn-close{
+    background: transparent;
+    opacity: 1;
+}
+
+.modal-header i{
+    color: #fefefe;
+    font-size: 30px;
+}
+
+.modal-body{ 
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+.modal-body .modal-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #274d8a;
+    border-bottom: 1px solid #274d8a;
+}
+
+.modal-body .modal-line:hover{
+    color: #fefefe;
+    border-bottom: 1px solid #fefefe;
+}
+
+.modal-line a{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #fefefe;
+}
+
+.modal-line i{
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+
+.mobile-modal-footer{
+    width: 87%;
+    margin: 0 auto;
+    padding: 20% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #274d8a;
+}
+
+.mobile-modal-footer i:hover{
+    color: #fefefe;
+}
+
+.section-1{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    visibility: hidden;
+}
+
+@media(min-width:769px){
+    .modal{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .menu{
+        visibility: visible;
+        right: 100px;
+        position: fixed;
+        background-color: rgb(184, 179, 179);
+        border-radius: 5px;
+    }
+
+    .navigation-header{
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 450px){
+    
+    .modal-dialog{
+        
+        width: 82%;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------ cards ------------------------------------------------------ */
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display-swap');
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background-color: #0000;
+    display: flex;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    width: 600px;
+}
+
+.card .imgBx{
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    background: #fff;
+    /* background: linear-gradient(90deg, rgb(64, 60, 145) 0%, rgb(33, 33, 192) 35%, rgb(67, 201, 228) 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.card .imgBx img{
+    max-width: 250px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .imgBx img{
+    transform: rotate(-35deg) translateX(-20px);
+}
+
+.imgs-pizzas{
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.card .details{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: #01c2bf;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction:column;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .details{
+    left: 300px;
+}
+
+.card .details::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+    z-index: 1;
+}
+
+.card .details h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height:1em;
+}
+
+.card .details h3 span{
+    font-size: 0.65em;
+    font-weight: 300;
+    opacity: 0.85;
+    text-transform: none;
+}
+
+.card .details h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7em;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p{
+    color:#fff;
+    font-size: 0.8em;
+    opacity: 0.85;
+}
+
+.size{
+    display: flex;
+    gap: 10px;
+}
+
+.size li{
+    list-style: none;
+    color: #fff;
+    font-size: 0.9em;
+    width: 63px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.size li:hover{
+    background: #fff;
+    color: #01c2bf;
+    opacity: 1;
+}
+
+.group{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.card .details h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.card .details h2 sup{
+    font-weight: 300;
+}
+
+.card .details h2 small{
+    font-size: 0.75em;
+}
+
+.card .details a{
+    display: inline-flex;
+    padding: 10px 25px;
+    background: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#01c2bf
+}
+
+
+.cards-pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}

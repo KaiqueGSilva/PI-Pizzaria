@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div class="pai">
+
+
+        <header>
+
+            <div class="header" id="header">
+
+
+                <div class="logo-header">
+
+                    <img src="imagens/logo.jpg" alt="Logo" id="logo-pizzaria">
+
+                </div>
+
+
+
+                <div class="navigation-header" id="navigation-header">
+
+                    <a href="home.html" class="home">Home</a>
+                    <a href="cardapio.html" class="cardapio">Cardápio</a>
+                    <a href="home.html#sobre-nos" class="sobre-nos">Sobre nós</a>
+                    <a href="contatos.html" class="contatos">Contatos</a>
+
+                </div>
+
+                <div class="teste">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                        <box-icon name='menu' class="menu"></box-icon>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <img src="imagens/logo.jpg" alt="Logo" class="logo">
+                            <p>Pizzaria Villaz</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <box-icon name='exit'></box-icon> </button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="modal-line">
+                                <box-icon class="icons-modal" name='home'></box-icon> 
+                                <a href="/" class="links">Home</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <box-icon class="icons-modal" name='food-menu' type='solid'></box-icon>
+                                 <a href="/services" class="links">Cardápio</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <box-icon class="icons-modal" name='info-circle'></box-icon> 
+                                <a href="/cases" class="links">Sobre nós</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <box-icon class="icons-modal" name='contact' type='solid'></box-icon> 
+                                <a href="/about" class="links">Contatos</a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-modal-footer">
+
+                            <a target="_blank" href="#"><box-icon name='instagram' type='logo'></box-icon></a>
+                            <a target="_blank" href="#"><box-icon name='whatsapp' type='logo'></box-icon></a>
+                            <a target="_blank" href="#"><box-icon type='logo' name='facebook-square'></box-icon></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+<!-- 
+        <div id="img-teste">
+
+            <img src="imagens/imagen-header2.jpg" alt="" class="testeeee">
+
+        </div> -->
+
+        <div id="carousel-pai">
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="imgss" src="imagens/promo3.jpg" class="d-block w-100" alt="">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="imgss" src="imagens/promoção3.jpg" class="d-block w-100" alt="">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="imgss" src="imagens/promoção2.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="imgss" src="imagens/promocao.jpg" class="d-block w-100" alt="">
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+                crossorigin="anonymous"></script>
+
+        </div>
+
+        <div id="parte-baixo">
+
+            <div id="card-pizzaria-geral">
+
+                <div id="card-pizzaria-centralizar">
+
+                    <div class="card-alinhar-lado">
+
+                        <div id="card-texto">
+
+                            <div id="titulo">
+                                <h1>Pizzaria Villaz</h1>
+
+                                <h2>PIZZA MÉDIA</h2>
+
+                                <p>com queijo, molho e orégano</p>
+
+                            </div>
+
+                            <div class="cor-vermelha-centro">
+                                <h3 id="cor-vermelha">+ 2 INGREDIENTES</h3>
+                            </div>
+
+                            <div id="linha">
+                                <p>por apenas</p>
+                                <div id="linha-horizontal"></div>
+                            </div>
+
+                            <div id="preco">
+                                <p>R$32,90</p>
+                            </div>
+
+                            <div class="cor-vermelha-centro">
+                                <a href="pag2.html" class="linkpag">
+                                    <h4 id="bot-comprar">PEÇA AGORA</h4>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div id="card-imagem">
+
+                            <img src="imagens/img-4.jpg" id="img-card" alt="">
+
+                        </div>
+
+                    </div>
+
+                    <div id="card-imagem2">
+
+                        <img src="imagens/img-5.png" class="img-card-direita" alt="" vspace="10">
+                        <img src="imagens/img-6.png" class="img-card-direita" alt="" vspace="10">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- <div id="imagem-teste">
+                <img src="imagens/footer.png" alt="" id="imagem-teste2">
+            </div> -->
+
+
+        </div>
+
+        <div id="imagem-parte-baixo">
+
+            <img src="imagens/footer.png" alt="" id="imagem-teste2">
+
+        </div>
+
+        <footer>
+
+            <section id="sobre-nos">
+
+                <div id="icones-de-contatos">
+
+                    <p>Redes Sociais</p>
+
+                    <ul id="icones">
+                        <li style="--color:#03A9F4"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li style="--color:#FF3780"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li style="--color:#1976D2"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li style="--color:#2BB24B"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+
+                    </ul>
+                    <!-- <img src="imagems/cocaCola.png" alt="">    -->
+
+                </div>
+
+
+
+            </section>
+
+
+            <div id="btnTop">
+                <img src="imagens/seta.png" alt="" class="tamanho">
+            </div>
+
+
+        </footer>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

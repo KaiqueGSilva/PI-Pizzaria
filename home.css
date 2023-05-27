@@ -1,0 +1,570 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bebas+Neue&display=swap');
+
+
+body{
+    background: linear-gradient(#121212, #222422, #474747, rgb(221, 221, 221));
+}
+
+#img-teste{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    min-height:90px;
+    min-width: 90px;
+}
+
+.testeeee{
+width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+#logo-pizzaria{
+    width: 90px;
+    border-radius: 50%;
+    position: fixed;
+}
+
+.header,
+.navigation-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    gap: 2em;
+}
+
+.header{
+    background: #00000055;
+    box-shadow: 1px 1px 4px #000000;
+    height: 5em;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: fixed;
+    width: 100%;
+}
+
+.navigation-header a{
+    text-decoration: none;
+    color: rgb(119, 117, 117);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px){
+    
+    .navigation-header a{
+        transition: 1s;
+    }
+
+}
+
+.navigation-header a:hover{
+    color: white;
+    background-color: rgb(134, 132, 132);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.content{
+    text-align: center;
+    padding-top: 5em;
+    /* height: 100vh; */
+    transition: 1s;
+}
+
+
+.logo{    
+    width: 90px;
+    border-radius: 50%;
+}
+
+
+/* modal */
+
+.links{
+    text-decoration: none;
+}
+
+.modal-dialog{  
+    margin: 0;
+    width: 430px;
+}
+
+.icons-modal{
+    background-color: white;
+    mix-blend-mode: color-burn;
+}
+
+.modal-header p{
+    color: white;
+    font-size: clamp(1.2rem, 4vw, 5rem); ;
+}
+
+
+.modal-content{
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #393d46;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
+}
+
+.modal-header .btn-close{
+    background: transparent;
+    opacity: 1;
+}
+
+.modal-header i{
+    color: #fefefe;
+    font-size: 30px;
+}
+
+.modal-body{ 
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+.modal-body .modal-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #274d8a;
+    border-bottom: 1px solid #274d8a;
+}
+
+.modal-body .modal-line:hover{
+    color: #fefefe;
+    border-bottom: 1px solid #fefefe;
+}
+
+.modal-line a{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #fefefe;
+}
+
+.modal-line i{
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+
+.mobile-modal-footer{
+    width: 87%;
+    margin: 0 auto;
+    padding: 20% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #274d8a;
+}
+
+.mobile-modal-footer i:hover{
+    color: #fefefe;
+}
+
+.section-1{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    visibility: hidden;
+}
+
+@media(min-width:769px){
+    .modal{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .menu{
+        visibility: visible;
+        right: 100px;
+        position: fixed;
+        background-color: rgb(184, 179, 179);
+        border-radius: 5px;
+    }
+
+    .navigation-header{
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 450px){
+    
+    .modal-dialog{
+        width: 82%;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+/* -------------------------------------- carousel ------------------------------------ */
+
+/* tamanho do carrosel */
+
+#carouselExampleInterval{
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* centralizando o carrosel */
+
+#carousel-pai{
+    justify-content: center;
+    display: flex;
+    position: static;
+    padding-top: 100px ;
+}
+
+
+/* tamanho das imagens */
+
+.imgss{
+    width: 100%;
+    max-height: 450px;
+    min-height: 180px;
+    border-radius: 10px;
+}
+
+
+/* ----------------------------- conteu de baixo da tela ------------------------------ */
+
+#parte-baixo{
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#card-pizzaria-geral{
+    max-width: 72%;
+    border-radius: 20px;
+}
+
+
+#card-pizzaria-centralizar{
+    justify-content: center;
+    display: flex;  
+    width: 100%;
+    max-height: 350px;
+    min-height: 150px;
+}
+
+#card-texto{
+    min-width: 40%;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color:  #000000;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+#card-imagem{
+    width: 100%;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 20px ;
+}
+
+.card-alinhar-lado{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+    #card-pizzaria-centralizar{
+        flex-wrap: wrap;
+    }
+
+    #card-imagem2{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    #imagem-teste{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -200px;
+    }
+}
+
+/* ...... */
+/* @media screen and (max-width: 768px){
+
+    #card-imagem2{
+        position: fixed;
+        margin-top: 250px;
+        width: 100px;
+        justify-content: center;
+        display: flex;
+    }
+
+    #card-imagem2 .img-card-direita{
+        justify-content: center;
+        display: flex;
+    }
+} */
+
+/* ...... */
+
+#img-card{
+    width:100%;
+    height: 100%;
+    min-height: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.img-card-direita{
+    width: 100%;
+    height: 46%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#cor-vermelha{
+    background-color: rgb(255, 22, 22);
+    width: 65%;
+    font-size: 1.2em;
+    color: white;
+    min-width: 20px;
+}
+
+.cor-vermelha-centro{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: clamp(0.5rem, 1vw, 3rem); 
+    text-decoration: none;
+}
+
+#titulo h1{
+    font-size: clamp(0.5rem, 6vw, 3rem); 
+    /* clamp(min, val, max) */
+    color: white;
+}
+
+#titulo h2{
+    font-size: clamp(0.5rem, 3vw, 1.5rem); 
+    color: white;
+}
+
+#titulo p{
+    font-size: clamp(0.7rem, 2vw, 1rem); 
+    color: white;
+}
+
+#linha p{
+    font-size: clamp(0.5rem, 3vw, 1rem); 
+    color: white;
+}
+
+#linha-horizontal {
+    margin-top: -10px;
+    max-width: 100vh;
+    border: 1px solid red;
+    align-items: center;
+}
+
+
+#preco{
+    color: white;
+    font-size: clamp(0.5rem, 4vw, 1rem); 
+}
+
+#bot-comprar{
+    color: white;
+    background-color: rgb(184, 9, 9);
+    width: 100%;
+    min-height: 20px;
+    font-size: clamp(0.5rem, 1vw, 1rem); 
+    border-color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    
+}
+
+.linkpag{
+    text-decoration: none;
+}
+
+#imagem-parte-baixo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+#imagem-parte-baixo #imagem-teste2{
+    max-width: 80%;
+    border-radius: 10px;
+    min-width: 10%;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* ------------------------------------------ icones ---------------------------------- */
+
+section{
+    scroll-behavior: smooth;
+}
+
+#icones{ 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#icones-de-contatos p{
+    font-size: clamp(1.5rem, 3vw, 2rem);;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#icones li{
+    margin-top: 30px;
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 15px 15px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#icones li::before{
+    content: '\f099';
+    font-family: fontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 2px solid var(--color);
+    text-align: center;
+    line-height: 100px;
+    font-size: 3em;
+    color: var(--color);
+    transition: .5s all;
+    border-radius: 100%;
+    
+}
+
+#icones li:hover::before{
+    height: 100%;
+}
+
+#icones li .fa-brands{
+    font-size: 3em;
+    -webkit-text-stroke: 2px var(--color);
+    color: transparent;
+}
+
+#icones li:nth-of-type(2)::before{
+    content: '\f16d';
+}
+
+#icones li:nth-of-type(3)::before{
+    content: '\f39e';
+}
+
+#icones li:nth-of-type(4)::before{
+    content: '\f232';
+}
+
+.teste-header{
+    width: 100%;
+}
+
+.teste-header2{
+    width: 100%;
+    height: 1000px;
+}
+
+#btnTop{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+.tamanho{
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px){
+    ul li,
+    ul li::before{
+        max-width: 50px;
+        max-height: 50px;
+        pointer-events: none;
+    }
+
+    #icones li .fa-brands{
+        font-size: 35px;
+    }
+
+    #btnTop{
+        right: 5px;
+    }
+}
